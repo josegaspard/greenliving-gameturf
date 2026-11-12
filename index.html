@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Green Living by Game Turf · Pasto sintético para casas en Querétaro</title>
+<meta name="description" content="Pasto sintético para jardines, terrazas, albercas, áreas para perros y juegos infantiles. Instalación del equipo de Game Turf en Querétaro y todo México.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://josegaspard.github.io/greenliving-gameturf/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:title" content="Green Living by Game Turf">
+<meta property="og:description" content="Pasto sintético para casas: jardín, terraza, alberca, mascotas y niños. Instalación en Querétaro y todo México.">
+<meta property="og:image" content="https://josegaspard.github.io/greenliving-gameturf/img/og.jpg">
+<meta property="og:url" content="https://josegaspard.github.io/greenliving-gameturf/">
+<meta name="theme-color" content="#14281D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2314281D'/%3E%3Cpath d='M9 24c1-6 2-10 4-14M16 24c0-6 0-11 1-16M23 24c-1-5-2-9-4-13' stroke='%23B9D58C' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..700&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<link rel="preload" as="image" type="image/avif" imagesrcset="img/hero-800.avif 800w, img/hero-1400.avif 1400w, img/hero-2200.avif 2200w" imagesizes="100vw" fetchpriority="high">
+<style>
+:root{
+  --pino:#14281D; --pino-2:#1C3628; --musgo:#2F5D3A; --musgo-h:#264D30; --brote:#B9D58C;
+  --piedra:#E8ECE7; --tinta:#18201B; --gris:#4E5A52; --linea:#D3DAD4; --blanco:#FFFFFF;
+  --display:"Archivo",system-ui,sans-serif; --text:"Hanken Grotesk",system-ui,sans-serif;
+  --ease:cubic-bezier(.22,.8,.24,1); --wrap:1240px; --g:clamp(20px,4vw,48px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--blanco);color:var(--tinta);font:400 18px/1.62 var(--text);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brote);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--g)}
+h1,h2,h3{font-family:var(--display);font-stretch:115%;font-weight:600;letter-spacing:-.025em;line-height:1.04}
+h2{font-size:clamp(36px,5.2vw,68px)}
+h3{font-size:clamp(22px,2vw,27px);letter-spacing:-.015em;line-height:1.15}
+p{max-width:62ch}
+.lead{font-size:clamp(19px,1.6vw,22px);color:var(--gris)}
+.btn{display:inline-flex;align-items:center;gap:12px;min-height:54px;padding:0 26px;border-radius:4px;font:600 17px/1 var(--text);text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background .35s var(--ease),color .35s var(--ease),border-color .35s var(--ease),transform .2s var(--ease)}
+.btn:active{transform:scale(.98)}
+.btn svg{width:18px;height:18px;transition:transform .45s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.btn-solid{background:var(--musgo);color:#fff}
+.btn-solid:hover{background:var(--musgo-h)}
+.btn-light{background:#fff;color:var(--pino)}
+.btn-light:hover{background:var(--brote)}
+.btn-ghost{border-color:rgba(255,255,255,.6);color:#fff}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn-wa{background:#1F8F4E;color:#fff}
+.btn-wa:hover{background:#18763F}
+
+/* Header */
+.top{position:fixed;inset:0 0 auto;z-index:30;transition:background .4s var(--ease),box-shadow .4s var(--ease),color .4s var(--ease);color:#fff}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+.top.solid{background:rgba(255,255,255,.96);color:var(--tinta);box-shadow:0 1px 0 var(--linea)}
+.mark{display:flex;flex-direction:column;text-decoration:none;line-height:1}
+.mark b{font:600 22px/1 var(--display);font-stretch:118%;letter-spacing:-.02em}
+.mark small{font-size:13px;opacity:.78;margin-top:5px;letter-spacing:.01em}
+.nav{display:flex;align-items:center;gap:34px}
+.nav a{text-decoration:none;font-weight:500;font-size:16px;position:relative}
+.nav a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1.5px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.nav a:not(.btn):hover::after{transform:scaleX(1)}
+.nav .btn{min-height:44px;padding:0 20px;font-size:15px}
+.top:not(.solid) .nav .btn{background:#fff;color:var(--pino)}
+.burger{display:none;width:46px;height:46px;border:0;background:none;color:inherit;cursor:pointer;position:relative}
+.burger i{position:absolute;left:11px;right:11px;height:2px;background:currentColor;transition:transform .45s var(--ease),top .45s var(--ease)}
+.burger i:first-child{top:18px}.burger i:last-child{top:26px}
+.menu-open .burger i:first-child{top:22px;transform:rotate(45deg)}
+.menu-open .burger i:last-child{top:22px;transform:rotate(-45deg)}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--pino)}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 60%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,22,15,.45) 0%,rgba(10,22,15,0) 22%,rgba(10,22,15,0) 42%,rgba(10,22,15,.78) 100%)}
+.hero .wrap{position:relative;z-index:1;width:100%;padding-bottom:clamp(40px,7vh,84px);display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end}
+.hero h1{font-size:clamp(46px,7.6vw,112px);max-width:none;letter-spacing:-.035em;line-height:.96}
+.hero h1 span{display:block;overflow:hidden}
+.hero h1 span b{display:block;font-weight:inherit;transform:translateY(105%);animation:rise 1.1s var(--ease) forwards}
+.hero h1 span:nth-child(2) b{animation-delay:.12s}
+.hero .sub{font-size:clamp(18px,1.5vw,21px);margin:26px 0 34px;max-width:46ch;color:rgba(255,255,255,.9);opacity:0;animation:fade 1s .45s var(--ease) forwards}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;opacity:0;animation:fade 1s .6s var(--ease) forwards}
+.facts{list-style:none;display:grid;gap:18px;border-left:1px solid rgba(255,255,255,.35);padding-left:24px;opacity:0;animation:fade 1s .8s var(--ease) forwards}
+.facts strong{display:block;font:600 21px/1.1 var(--display);font-stretch:112%}
+.facts span{font-size:15px;color:rgba(255,255,255,.78)}
+@keyframes rise{to{transform:none}}
+@keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* Intro */
+.intro{padding:clamp(88px,12vw,168px) 0 clamp(72px,9vw,128px)}
+.intro .wrap{display:grid;grid-template-columns:7fr 5fr;gap:clamp(40px,6vw,96px);align-items:end}
+.intro .statement{font:500 clamp(26px,3vw,40px)/1.22 var(--display);font-stretch:108%;letter-spacing:-.02em;max-width:24ch}
+.intro .statement + p{margin-top:28px;color:var(--gris)}
+.intro figure img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:3px}
+.intro figcaption{font-size:15px;color:var(--gris);margin-top:12px}
+
+/* Espacios */
+.espacios{padding:0 0 clamp(88px,11vw,150px)}
+.espacios .head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:clamp(40px,5vw,72px)}
+.espacios .head p{max-width:40ch;color:var(--gris)}
+.mosaic{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(16px,2vw,28px)}
+.tile{position:relative;overflow:hidden;border-radius:3px;background:var(--piedra)}
+.tile picture img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.tile:hover picture img{transform:scale(1.035)}
+.tile .txt{padding:22px 4px 0}
+.tile .txt p{color:var(--gris);font-size:17px;margin-top:8px}
+.t-jardin{grid-column:1/8;background:none}
+.t-jardin picture{display:block;aspect-ratio:6/5;overflow:hidden;border-radius:3px}
+.t-terraza{grid-column:9/13;align-self:end;background:none}
+.t-terraza picture{display:block;aspect-ratio:4/5;overflow:hidden;border-radius:3px}
+.t-perros{grid-column:1/6;background:var(--pino);color:#fff;padding:clamp(28px,3.4vw,48px);display:flex;flex-direction:column;justify-content:space-between;min-height:340px;margin-top:clamp(16px,4vw,64px)}
+.t-perros p{color:rgba(255,255,255,.82);font-size:17px;margin-top:12px}
+.t-perros svg{width:58px;height:58px;stroke:var(--brote);margin-bottom:32px}
+.t-juegos{grid-column:6/13;display:grid;grid-template-columns:1.1fr 1fr;background:none;gap:clamp(16px,2vw,28px);align-items:end;margin-top:clamp(16px,4vw,64px)}
+.t-juegos picture{display:block;aspect-ratio:1/1;overflow:hidden;border-radius:3px}
+.t-juegos .txt{padding:0 0 8px}
+
+/* Banda alberca */
+.banda{position:relative;min-height:min(92vh,820px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.banda picture,.banda picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 70%}
+.banda::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,22,15,.72),rgba(10,22,15,0) 55%)}
+.banda .wrap{position:relative;z-index:1;width:100%;padding-bottom:clamp(40px,6vw,80px)}
+.banda h2{font-size:clamp(34px,4.6vw,60px);max-width:16ch}
+.banda p{margin-top:16px;color:rgba(255,255,255,.88);max-width:48ch}
+.credit{position:absolute;right:12px;bottom:10px;z-index:1;font-size:12px;color:rgba(255,255,255,.7)}
+.credit a{color:inherit}
+
+/* Proceso */
+.proceso{background:var(--pino);color:#fff;padding:clamp(88px,11vw,150px) 0}
+.proceso .wrap{display:grid;grid-template-columns:5fr 7fr;gap:clamp(40px,7vw,120px)}
+.proceso .side{position:sticky;top:120px;align-self:start}
+.proceso .side p{color:rgba(255,255,255,.78);margin-top:24px;max-width:38ch}
+.steps{list-style:none;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:64px 1fr;gap:8px 20px;padding:34px 0;border-top:1px solid rgba(255,255,255,.18)}
+.steps li:last-child{border-bottom:1px solid rgba(255,255,255,.18)}
+.steps li::before{content:counter(s);grid-row:span 2;width:48px;height:48px;border-radius:50%;border:1.5px solid var(--brote);color:var(--brote);display:grid;place-items:center;font:600 19px/1 var(--display)}
+.steps p{color:rgba(255,255,255,.78);font-size:17px}
+.detalles{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2vw,28px);margin-top:56px}
+.detalles figure{background:var(--pino-2);border-radius:3px;overflow:hidden}
+.detalles img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.detalles figcaption{padding:20px 22px 24px;font-size:16px;color:rgba(255,255,255,.8)}
+.detalles figcaption b{display:block;color:#fff;font:600 19px/1.2 var(--display);font-stretch:110%;margin-bottom:6px}
+
+/* Calculadora */
+.calc{background:var(--piedra);padding:clamp(88px,11vw,150px) 0}
+.calc .wrap{display:grid;grid-template-columns:5fr 7fr;gap:clamp(40px,6vw,96px);align-items:start}
+.calc .intro-c p{margin-top:22px;color:var(--gris)}
+.areas{margin-top:36px;display:grid;gap:14px}
+.area{display:grid;grid-template-columns:1fr 1fr 44px;gap:12px;align-items:end}
+label{display:block;font-size:15px;font-weight:600;margin-bottom:7px}
+input,select,textarea{width:100%;min-height:54px;padding:12px 16px;border:1.5px solid var(--linea);border-radius:4px;background:#fff;font:400 18px/1.3 var(--text);color:var(--tinta);transition:border-color .3s var(--ease)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--musgo)}
+textarea{min-height:110px;resize:vertical}
+.rm{width:44px;height:54px;border:0;background:none;font-size:26px;color:var(--gris);cursor:pointer}
+.add{margin-top:6px;border:0;background:none;font:600 16px var(--text);color:var(--musgo);text-decoration:underline;text-underline-offset:4px;cursor:pointer;padding:8px 0;justify-self:start}
+.plano{background:#fff;border-radius:3px;padding:clamp(24px,3vw,44px)}
+.plano #plan{width:100%;height:auto;display:block}
+.plano .grass{fill:#3F7A4A;transition:all .6s var(--ease)}
+.plano .dim{stroke:var(--gris);stroke-width:1.2}
+.plano text{font:600 20px var(--text);fill:var(--gris)}
+.res{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:12px 32px;margin-top:28px;padding-top:24px;border-top:1px solid var(--linea)}
+#m2{font:600 clamp(48px,6vw,84px)/1 var(--display);font-stretch:112%;letter-spacing:-.03em}
+#m2 span{font-size:.4em;font-weight:500;margin-left:6px}
+.range{font-size:18px;max-width:30ch}
+.note{font-size:15px;color:var(--gris);margin-top:20px;max-width:70ch}
+.calc .cta-row{margin-top:26px}
+
+/* Cuidados */
+.cuidados{padding:clamp(88px,11vw,150px) 0}
+.cuidados .wrap{display:grid;grid-template-columns:5fr 7fr;gap:clamp(40px,6vw,96px)}
+.cuidados .side p{margin-top:22px;color:var(--gris)}
+.care{list-style:none}
+.care li{display:grid;grid-template-columns:52px 1fr;gap:20px;padding:30px 0;border-top:1px solid var(--linea)}
+.care li:last-child{border-bottom:1px solid var(--linea)}
+.care svg{width:40px;height:40px;stroke:var(--musgo);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.care p{color:var(--gris);font-size:17px;margin-top:8px}
+
+/* FAQ */
+.faq{padding:0 0 clamp(88px,11vw,150px)}
+.faq .wrap{display:grid;grid-template-columns:5fr 7fr;gap:clamp(40px,6vw,96px)}
+details{border-top:1px solid var(--linea)}
+details:last-of-type{border-bottom:1px solid var(--linea)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:24px;align-items:center;padding:24px 0;font:600 clamp(19px,1.6vw,22px)/1.3 var(--display);font-stretch:106%;letter-spacing:-.01em}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:14px;height:14px;border-right:2px solid var(--musgo);border-bottom:2px solid var(--musgo);transform:rotate(45deg) translateY(-4px);transition:transform .45s var(--ease)}
+details[open] summary::after{transform:rotate(225deg) translateY(-2px)}
+details p{padding:0 0 26px;color:var(--gris);font-size:17px}
+
+/* Contacto */
+.contacto{background:var(--pino);color:#fff;padding:clamp(88px,11vw,150px) 0}
+.contacto .wrap{display:grid;grid-template-columns:5fr 7fr;gap:clamp(40px,6vw,96px)}
+.contacto .lead{color:rgba(255,255,255,.8);margin-top:22px}
+.vias{list-style:none;margin-top:40px;display:grid;gap:22px}
+.vias a{font:600 20px/1.3 var(--display);font-stretch:108%;text-decoration:none;border-bottom:1.5px solid rgba(255,255,255,.35);transition:border-color .3s var(--ease)}
+.vias a:hover{border-color:var(--brote)}
+.vias span{display:block;font-size:15px;color:rgba(255,255,255,.7);margin-top:4px}
+.vias .btn{border:0;margin-bottom:6px}
+.formbox{background:#fff;color:var(--tinta);border-radius:3px;padding:clamp(24px,3.4vw,48px)}
+#cotiza{display:grid;grid-template-columns:1fr 1fr;gap:18px 18px}
+#cotiza .full{grid-column:1/-1}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.err{color:#A3261B;font-size:16px;min-height:0}
+#cotiza button{justify-self:start}
+#f-ok{display:none}
+#f-ok h3{margin-bottom:12px}
+#f-ok p{color:var(--gris);margin-bottom:24px}
+
+/* Footer */
+footer{background:#0F1F16;color:rgba(255,255,255,.75);padding:56px 0 40px;font-size:16px}
+footer .wrap{display:grid;grid-template-columns:1.2fr 1fr 1.3fr;gap:32px}
+footer .mark{color:#fff;margin-bottom:14px}
+footer p{max-width:40ch}
+footer p + p{margin-top:10px}
+footer .legal{max-width:none;grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding-top:24px;margin-top:16px;font-size:14px;color:rgba(255,255,255,.55)}
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:20;width:58px;height:58px;border-radius:50%;background:#1F8F4E;display:grid;place-items:center;box-shadow:0 12px 30px -10px rgba(0,0,0,.45);transition:transform .35s var(--ease)}
+.wa-float:hover{transform:translateY(-3px)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+
+/* Reveal (solo con JS) */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+
+@media (max-width:960px){
+  .nav{position:fixed;inset:0;background:var(--pino);color:#fff;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 32px;gap:26px;opacity:0;pointer-events:none;transition:opacity .45s var(--ease)}
+  .nav a{font:600 32px/1.1 var(--display);font-stretch:112%;transform:translateY(16px);transition:transform .6s var(--ease)}
+  .nav .btn{font-size:18px;min-height:54px;margin-top:10px;background:#fff;color:var(--pino)}
+  .menu-open .nav{opacity:1;pointer-events:auto}
+  .menu-open .nav a{transform:none}
+  .menu-open .top{color:#fff;background:transparent;box-shadow:none}
+  .burger{display:block;z-index:2}
+  .hero .wrap{grid-template-columns:1fr}
+  .facts{grid-template-columns:repeat(3,auto);border-left:0;padding-left:0;border-top:1px solid rgba(255,255,255,.35);padding-top:20px;gap:16px}
+  .intro .wrap,.proceso .wrap,.calc .wrap,.cuidados .wrap,.faq .wrap,.contacto .wrap{grid-template-columns:1fr}
+  .proceso .side{position:static}
+  .espacios .head{flex-direction:column;align-items:flex-start}
+  .t-jardin,.t-terraza,.t-perros,.t-juegos{grid-column:1/-1;margin-top:0}
+  .t-terraza{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:end}
+  .t-terraza picture{aspect-ratio:4/5}
+  .mosaic{grid-template-columns:1fr;gap:48px}
+  .t-perros{min-height:0}
+  footer .wrap{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  body{font-size:17.5px}
+  .hero picture img{object-position:72% 60%}
+  .facts{grid-template-columns:1fr 1fr 1fr}
+  .facts strong{font-size:17px}.facts span{font-size:13.5px}
+  .t-terraza,.t-juegos{grid-template-columns:1fr}
+  .t-juegos picture,.t-jardin picture,.t-terraza picture{aspect-ratio:4/3}
+  .detalles{grid-template-columns:1fr}
+  #cotiza{grid-template-columns:1fr}
+  .hero .ctas .btn{flex:1 1 100%;justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important}
+  .js .rv{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"HomeAndConstructionBusiness","@id":"https://josegaspard.github.io/greenliving-gameturf/#negocio","name":"Green Living by Game Turf","description":"Línea residencial de Game Turf: venta e instalación de pasto sintético para jardines, terrazas, azoteas, albercas, áreas para perros y juegos infantiles.","url":"https://josegaspard.github.io/greenliving-gameturf/","image":"https://josegaspard.github.io/greenliving-gameturf/img/og.jpg","telephone":"+52-442-344-5554","email":"alejandrovmz@pastodeportivo.com","address":{"@type":"PostalAddress","streetAddress":"C. Carlos Septién García 16","addressLocality":"Querétaro","addressRegion":"Qro.","postalCode":"76030","addressCountry":"MX"},"areaServed":[{"@type":"City","name":"Querétaro"},{"@type":"Country","name":"México"}],"parentOrganization":{"@type":"Organization","name":"Game Turf","url":"https://pastodeportivo.com/"}},
+{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "¿Green Living y Game Turf son la misma empresa?", "acceptedAnswer": {"@type": "Answer", "text": "Green Living es la línea residencial de Game Turf. Mismo equipo de instalación y mismos datos de contacto; Game Turf atiende canchas deportivas y Green Living jardines, terrazas, albercas y patios de casa."}},{"@type": "Question", "name": "¿Cuánto cuesta poner pasto sintético en una casa?", "acceptedAnswer": {"@type": "Answer", "text": "Según el promedio nacional de Cronoshare (enero de 2026), entre 200 y 550 pesos por m² instalado. El precio real depende de los metros, el suelo, la base y los remates. Game Turf da el número exacto tras ver medidas y fotos, sin costo."}},{"@type": "Question", "name": "¿Cuánto tarda la instalación?", "acceptedAnswer": {"@type": "Answer", "text": "Un jardín típico, dos o tres días de obra. Azoteas o terrenos con desnivel pueden tardar más por el trabajo de base y drenaje."}},{"@type": "Question", "name": "¿Se puede poner sobre concreto o sobre una losa?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, si el firme tiene pendiente y salida de agua. En losa se fija sin perforar el impermeabilizante. Sobre tierra primero se retira la capa suelta y se compacta una base de grava."}},{"@type": "Question", "name": "¿Sirve si tengo perro?", "acceptedAnswer": {"@type": "Answer", "text": "Sí: fibra corta y densa de 20 a 25 mm, respaldo perforado para que drene la orina y un enjuague semanal en la zona de uso. Con varios perros conviene un relleno mineral contra el olor."}},{"@type": "Question", "name": "¿El pasto sintético se calienta?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. En una prueba de la Universidad Estatal de Pensilvania llegó a 68.7 °C, contra 35.2 °C del pasto natural. Mojarlo lo enfría por poco tiempo; en zonas de estar conviene sombra."}},{"@type": "Question", "name": "¿Instalan fuera de Querétaro?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, en todo México. Manda la ciudad, los metros aproximados y unas fotos por el formulario o al WhatsApp 442 344 5554."}}]}
+]}
+</script>
+</head>
+<body>
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="mark" href="#inicio" aria-label="Green Living by Game Turf, inicio"><b>Green Living</b><small>by Game Turf</small></a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><i></i><i></i></button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#espacios">Espacios</a>
+      <a href="#instalacion">Instalación</a>
+      <a href="#calculadora">Calculadora</a>
+      <a href="#preguntas">Preguntas</a>
+      <a class="btn" href="#cotizar">Cotizar</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <picture>
+    <source type="image/avif" srcset="img/hero-800.avif 800w, img/hero-1400.avif 1400w, img/hero-2200.avif 2200w" sizes="100vw">
+    <source type="image/webp" srcset="img/hero-800.webp 800w, img/hero-1400.webp 1400w, img/hero-2200.webp 2200w" sizes="100vw">
+    <img src="img/hero-1400.webp" alt="Jardín de una casa moderna con césped verde y un seto alto al fondo" width="2200" height="1468" fetchpriority="high">
+  </picture>
+  <div class="wrap">
+    <div>
+      <h1><span><b>Tu jardín,</b></span><span><b>verde todo el&nbsp;año</b></span></h1>
+      <p class="sub">Pasto sintético para jardines, terrazas, albercas y patios de casa. Sin riego, sin poda y sin lodo.</p>
+      <div class="ctas">
+        <a class="btn btn-light" href="#cotizar">Pedir cotización sin costo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#calculadora">Calcular mis m²</a>
+      </div>
+    </div>
+    <ul class="facts">
+      <li><strong>2 a 3 días</strong><span>de obra en un jardín típico</span></li>
+      <li><strong>Sin riego</strong><span>solo enjuagues ocasionales</span></li>
+      <li><strong>Todo México</strong><span>con base en Querétaro</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="wrap">
+    <div class="rv">
+      <p class="statement">Green Living es la línea residencial de Game Turf: el mismo equipo que construye canchas en Querétaro, ahora en jardines y patios de casa.</p>
+      <p>Cada proyecto empieza midiendo el lugar. Tierra suelta, losa o desnivel: con eso se eligen la altura del pasto, la base y la salida del agua. Para canchas de fútbol o pádel, visita <a href="https://pastodeportivo.com/">Game Turf</a>.</p>
+    </div>
+    <figure class="rv">
+      <picture>
+        <source type="image/avif" srcset="img/cesped-600.avif 600w, img/cesped-900.avif 900w" sizes="(max-width:960px) 100vw, 40vw">
+        <img src="img/cesped-900.webp" srcset="img/cesped-600.webp 600w, img/cesped-900.webp 900w" sizes="(max-width:960px) 100vw, 40vw" alt="Pasto sintético recién instalado junto a un seto" width="900" height="480" loading="lazy">
+      </picture>
+      <figcaption>Pasto sintético instalado por Game Turf en Querétaro.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="espacios" id="espacios">
+  <div class="wrap">
+    <div class="head rv">
+      <h2>Para cada rincón de la casa</h2>
+      <p>Sobre tierra va con base de grava compactada. Sobre concreto se fija al firme y respeta pendientes y coladeras.</p>
+    </div>
+    <div class="mosaic">
+      <article class="tile t-jardin rv">
+        <picture>
+          <source type="image/avif" srcset="img/jardin-600.avif 600w, img/jardin-780.avif 780w" sizes="(max-width:960px) 100vw, 58vw">
+          <img src="img/jardin-780.webp" srcset="img/jardin-600.webp 600w, img/jardin-780.webp 780w" sizes="(max-width:960px) 100vw, 58vw" alt="Jardín con pasto sintético rodeado de árboles" width="780" height="650" loading="lazy">
+        </picture>
+        <div class="txt"><h3>Jardín y patio</h3><p>La instalación más común. Para caminar descalzo, fibra de 30 a 40 mm con hilo rizado.</p></div>
+      </article>
+      <article class="tile t-terraza rv">
+        <picture>
+          <source type="image/avif" srcset="img/terraza-600.avif 600w, img/terraza-900.avif 900w" sizes="(max-width:600px) 100vw, (max-width:960px) 50vw, 32vw">
+          <img src="img/terraza-600.webp" srcset="img/terraza-600.webp 600w, img/terraza-900.webp 900w" sizes="(max-width:600px) 100vw, (max-width:960px) 50vw, 32vw" alt="Terraza en azotea con pasto sintético junto a un andador" width="900" height="650" loading="lazy">
+        </picture>
+        <div class="txt"><h3>Terraza y azotea</h3><p>Sobre losa, sin tierra y sin perforar el impermeabilizante.</p></div>
+      </article>
+      <article class="tile t-perros rv">
+        <div>
+          <svg viewBox="0 0 64 64" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="32" cy="42" rx="11" ry="9"/><ellipse cx="17" cy="26" rx="5" ry="6.5"/><ellipse cx="27" cy="16" rx="5" ry="6.5"/><ellipse cx="37" cy="16" rx="5" ry="6.5"/><ellipse cx="47" cy="26" rx="5" ry="6.5"/></svg>
+          <h3>Perros y mascotas</h3>
+          <p>Fibra corta y densa de 20 a 25 mm y respaldo perforado para que drene la orina. Un enjuague a la semana en la zona de uso.</p>
+        </div>
+      </article>
+      <article class="tile t-juegos rv">
+        <picture>
+          <source type="image/avif" srcset="img/juegos-640.avif" type="image/avif">
+          <img src="img/juegos-640.webp" alt="Pasto sintético bajo una estructura de juegos infantiles" width="640" height="650" loading="lazy">
+        </picture>
+        <div class="txt"><h3>Juegos infantiles</h3><p>Con amortiguante bajo columpios y resbaladillas. Sin piedras ni lodo, listo al rato de que llueve.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="banda" aria-labelledby="alberca-t">
+  <picture>
+    <source type="image/avif" srcset="img/alberca-800.avif 800w, img/alberca-1400.avif 1400w, img/alberca-2200.avif 2200w" sizes="100vw">
+    <img src="img/alberca-1400.webp" srcset="img/alberca-800.webp 800w, img/alberca-1400.webp 1400w, img/alberca-2200.webp 2200w" sizes="100vw" alt="Alberca rodeada de césped con andador de losas" width="2200" height="1468" loading="lazy">
+  </picture>
+  <div class="wrap rv">
+    <h2 id="alberca-t">Alrededor de la alberca</h2>
+    <p>No astilla como la madera ni resbala como el concreto mojado. El agua escurre por el respaldo permeable.</p>
+  </div>
+  <small class="credit">Foto de referencia: Max Vakhtbovych en <a href="https://www.pexels.com/photo/backyard-swimming-pool-under-blue-sky-8134748/" rel="noopener" target="_blank">Pexels</a></small>
+</section>
+
+<section class="proceso" id="instalacion">
+  <div class="wrap">
+    <div class="side rv">
+      <h2>Cuatro etapas y una base bien hecha</h2>
+      <p>Lo que no se ve decide si el pasto se ondula o se encharca al año.</p>
+    </div>
+    <div>
+      <ol class="steps">
+        <li class="rv"><h3>Visita y medición</h3><p>Medimos las áreas, revisamos si es tierra o concreto y hacia dónde corre el agua.</p></li>
+        <li class="rv"><h3>Base y drenaje</h3><p>Se compacta una base de grava con pendiente y quedan accesibles registros y coladeras.</p></li>
+        <li class="rv"><h3>Tendido y remates</h3><p>El pasto va en un solo sentido, con juntas pegadas y orillas rematadas contra jardineras y andadores.</p></li>
+        <li class="rv"><h3>Cepillado y entrega</h3><p>Se levanta la fibra, se pone relleno si el uso lo pide y te explicamos cómo cuidarlo.</p></li>
+      </ol>
+      <div class="detalles">
+        <figure class="rv">
+          <picture>
+            <source type="image/avif" srcset="img/coladera-600.avif 600w, img/coladera-900.avif 900w" sizes="(max-width:600px) 100vw, 30vw">
+            <img src="img/coladera-600.webp" srcset="img/coladera-600.webp 600w, img/coladera-900.webp 900w" sizes="(max-width:600px) 100vw, 30vw" alt="Mano levantando la solapa de pasto sintético sobre una coladera metálica" width="900" height="700" loading="lazy">
+          </picture>
+          <figcaption><b>Las coladeras no desaparecen</b>Quedan bajo una solapa que se levanta con la mano.</figcaption>
+        </figure>
+        <figure class="rv">
+          <picture>
+            <source type="image/avif" srcset="img/remate-600.avif 600w, img/remate-860.avif 860w" sizes="(max-width:600px) 100vw, 30vw">
+            <img src="img/remate-600.webp" srcset="img/remate-600.webp 600w, img/remate-860.webp 860w" sizes="(max-width:600px) 100vw, 30vw" alt="Orilla de pasto sintético rematada contra un andador de concreto" width="860" height="1150" loading="lazy">
+          </picture>
+          <figcaption><b>Orillas limpias</b>Remate recto contra andadores y bordes de concreto.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="calc" id="calculadora">
+  <div class="wrap">
+    <div class="intro-c rv">
+      <h2>Calcula tus metros</h2>
+      <p>Mide largo y ancho. Si tu jardín tiene forma de L, divídelo en dos rectángulos.</p>
+      <div class="areas" id="areas"></div>
+      <button type="button" class="add" id="add-area">Agregar otra zona</button>
+    </div>
+    <div class="plano rv">
+      <svg id="plan" viewBox="0 0 640 380" role="img" aria-label="Plano a escala de las zonas que escribiste"></svg>
+      <div class="res">
+        <p id="m2" aria-live="polite">0 <span>m²</span></p>
+        <p class="range" id="range">Escribe las medidas para ver el total.</p>
+      </div>
+      <p class="note">Referencia de mercado, no tarifa de Game Turf: en México el pasto sintético instalado cuesta entre 200 y 550 pesos por m², según el promedio nacional de <a href="https://www.cronoshare.com.mx/cuanto-cuesta/instalar-pasto-sint%C3%A9tico" target="_blank" rel="noopener">Cronoshare</a> (enero de 2026). Las áreas chicas salen más caras por metro.</p>
+      <div class="cta-row"><a class="btn btn-solid" href="#cotizar" id="calc-cta">Cotizar estos metros <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="cuidados" id="cuidados">
+  <div class="wrap">
+    <div class="side rv">
+      <h2>Poco mantenimiento, pero no cero</h2>
+      <p>Con estos cuidados, un pasto sintético de casa dura de 10 a 15 años.</p>
+    </div>
+    <ul class="care">
+      <li class="rv"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 30h28M10 30V20M16 30V16M22 30V18M28 30V14M8 36h24"/></svg><div><h3>Cepillar y quitar hojas</h3><p>Contra el sentido de la fibra, con soplador o rastrillo de plástico. En pasillos de paso, más seguido.</p></div></li>
+      <li class="rv"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 6c6 8 9 13 9 17a9 9 0 0 1-18 0c0-4 3-9 9-17z"/></svg><div><h3>Enjuagar la zona de mascotas</h3><p>Un chorro de agua a la semana evita el olor. El respaldo perforado deja pasar el líquido.</p></div></li>
+      <li class="rv"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="6"/><path d="M20 4v5M20 31v5M4 20h5M31 20h5M8.7 8.7l3.5 3.5M27.8 27.8l3.5 3.5M8.7 31.3l3.5-3.5M27.8 12.2l3.5-3.5"/></svg><div><h3>Dar sombra en zonas de estar</h3><p>Al sol se calienta: en una prueba de la <a href="https://plantscience.psu.edu/research/centers/ssrc/research/effect-of-irrigation-on-synthetic-turf-1.pdf/@@download/file/Effect%20of%20irrigation%20on%20synthetic%20turf.pdf" target="_blank" rel="noopener">Universidad Estatal de Pensilvania</a> llegó a 68.7 °C contra 35.2 °C del pasto natural. Un árbol o una pérgola lo resuelven.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="faq" id="preguntas">
+  <div class="wrap">
+    <div class="rv"><h2>Preguntas frecuentes</h2></div>
+    <div class="rv"><details><summary>¿Green Living y Game Turf son la misma empresa?</summary><p>Green Living es la línea residencial de Game Turf. Mismo equipo de instalación y mismos datos de contacto; Game Turf atiende canchas deportivas y Green Living jardines, terrazas, albercas y patios de casa.</p></details><details><summary>¿Cuánto cuesta poner pasto sintético en una casa?</summary><p>Según el promedio nacional de Cronoshare (enero de 2026), entre 200 y 550 pesos por m² instalado. El precio real depende de los metros, el suelo, la base y los remates. Game Turf da el número exacto tras ver medidas y fotos, sin costo.</p></details><details><summary>¿Cuánto tarda la instalación?</summary><p>Un jardín típico, dos o tres días de obra. Azoteas o terrenos con desnivel pueden tardar más por el trabajo de base y drenaje.</p></details><details><summary>¿Se puede poner sobre concreto o sobre una losa?</summary><p>Sí, si el firme tiene pendiente y salida de agua. En losa se fija sin perforar el impermeabilizante. Sobre tierra primero se retira la capa suelta y se compacta una base de grava.</p></details><details><summary>¿Sirve si tengo perro?</summary><p>Sí: fibra corta y densa de 20 a 25 mm, respaldo perforado para que drene la orina y un enjuague semanal en la zona de uso. Con varios perros conviene un relleno mineral contra el olor.</p></details><details><summary>¿El pasto sintético se calienta?</summary><p>Sí. En una prueba de la Universidad Estatal de Pensilvania llegó a 68.7 °C, contra 35.2 °C del pasto natural. Mojarlo lo enfría por poco tiempo; en zonas de estar conviene sombra.</p></details><details><summary>¿Instalan fuera de Querétaro?</summary><p>Sí, en todo México. Manda la ciudad, los metros aproximados y unas fotos por el formulario o al WhatsApp 442 344 5554.</p></details></div>
+  </div>
+</section>
+
+<section class="contacto" id="cotizar">
+  <div class="wrap">
+    <div class="rv">
+      <h2>Cotiza el pasto de tu casa</h2>
+      <p class="lead">Mándanos la ciudad, los metros aproximados y, si puedes, unas fotos. La cotización no tiene costo.</p>
+      <ul class="vias">
+        <li><a class="btn btn-wa" href="https://wa.me/524423445554?text=Hola%2C%20quiero%20cotizar%20pasto%20sint%C3%A9tico%20para%20mi%20casa" target="_blank" rel="noopener">Escribir por WhatsApp</a><span>442 344 5554 · también para mandar fotos</span></li>
+        <li><a href="tel:+524423445554">Llamar al 442 344 5554</a><span>Game Turf, Querétaro</span></li>
+        <li><a href="mailto:alejandrovmz@pastodeportivo.com?subject=Cotizaci%C3%B3n%20pasto%20sint%C3%A9tico%20para%20casa">alejandrovmz@pastodeportivo.com</a><span>Por correo</span></li>
+      </ul>
+    </div>
+    <div class="formbox rv">
+      <form id="cotiza" novalidate>
+        <div><label for="f-n">Nombre</label><input id="f-n" name="your-name" autocomplete="name" required></div>
+        <div><label for="f-w">WhatsApp o teléfono</label><input id="f-w" name="your-phone" type="tel" inputmode="tel" autocomplete="tel" required></div>
+        <div class="full"><label for="f-e">Correo</label><input id="f-e" name="your-email" type="email" autocomplete="email" required></div>
+        <div><label for="f-s">Dónde va el pasto</label>
+          <select id="f-s" name="espacio"><option>Jardín o patio</option><option>Terraza o azotea</option><option>Alrededor de la alberca</option><option>Área para perros</option><option>Juegos infantiles</option><option>Varias zonas</option></select></div>
+        <div><label for="f-m">Metros aproximados</label><input id="f-m" name="m2" inputmode="decimal" placeholder="Ej. 48"></div>
+        <div class="full"><label for="f-c">Ciudad</label><input id="f-c" name="ciudad" autocomplete="address-level2" placeholder="Ej. Querétaro"></div>
+        <div class="full"><label for="f-msg">Algo más que debamos saber</label><textarea id="f-msg" name="your-message" placeholder="Tipo de suelo, si hay perros, fecha que te gustaría…"></textarea></div>
+        <div class="hp" aria-hidden="true"><label for="f-hp">No llenar</label><input id="f-hp" name="gt_hp" tabindex="-1" autocomplete="off"></div>
+        <p class="err full" id="f-err" role="alert"></p>
+        <button class="btn btn-solid" type="submit">Enviar y pedir cotización</button>
+      </form>
+      <div id="f-ok" tabindex="-1">
+        <h3>Recibimos tus datos</h3>
+        <p>El equipo de Game Turf te contacta para la cotización. Si quieres adelantar, mándanos fotos del lugar por WhatsApp con tus datos ya escritos.</p>
+        <a class="btn btn-wa" id="f-wa" href="https://wa.me/524423445554" target="_blank" rel="noopener">Seguir por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="mark" href="#inicio"><b>Green Living</b><small>by Game Turf</small></a>
+      <p>Pasto sintético para casas: jardín, terraza, alberca, mascotas y niños.</p>
+    </div>
+    <div>
+      <p>C. Carlos Septién García 16<br>Querétaro, Qro. 76030</p>
+      <p><a href="tel:+524423445554">442 344 5554</a></p>
+    </div>
+    <div>
+      <p>Green Living es la línea residencial de <a href="https://pastodeportivo.com/">Game Turf</a>. Canchas de fútbol, pádel y proyectos deportivos en pastodeportivo.com.</p>
+      <p>Foto principal: Max Vakhtbovych en <a href="https://www.pexels.com/photo/house-with-lawn-7587878/" target="_blank" rel="noopener">Pexels</a>.</p>
+    </div>
+    <p class="legal">© <span id="yr">2026</span> Game Turf. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/524423445554?text=Hola%2C%20quiero%20cotizar%20pasto%20sint%C3%A9tico%20para%20mi%20casa" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4a3.3 3.3 0 0 0-1 2.4 5.8 5.8 0 0 0 1.2 3 13 13 0 0 0 5 4.4c1.9.8 2.6.9 3.5.7.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg></a>
+
+<script>
+(function(){
+  var BRAND="Green Living", WA="524423445554";
+  var LEAD_URL="https://pastodeportivo.com/wp-admin/admin-ajax.php";
+  document.documentElement.classList.add('js');
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  /* Cabecera sólida al salir del hero + menú móvil */
+  var top=document.getElementById('top'),hero=document.getElementById('inicio');
+  new IntersectionObserver(function(e){top.classList.toggle('solid',!e[0].isIntersecting);},{rootMargin:'-80px 0px 0px 0px'}).observe(hero);
+  var bg=document.getElementById('burger');
+  function menu(o){document.body.classList.toggle('menu-open',o);bg.setAttribute('aria-expanded',o);bg.setAttribute('aria-label',o?'Cerrar menú':'Abrir menú');}
+  bg.onclick=function(){menu(!document.body.classList.contains('menu-open'));};
+  document.querySelectorAll('#nav a').forEach(function(a){a.addEventListener('click',function(){menu(false);});});
+
+  /* Aparición al entrar en pantalla */
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+
+  /* Calculadora con plano a escala */
+  var box=document.getElementById('areas'),plan=document.getElementById('plan'),n=0,total=0;
+  function fmt(v){return v.toLocaleString('es-MX',{maximumFractionDigits:1});}
+  function money(v){return (Math.round(v/100)*100).toLocaleString('es-MX');}
+  function num(v){v=parseFloat(String(v).replace(',','.'));return isFinite(v)&&v>0?v:0;}
+  function addArea(){
+    n++;var d=document.createElement('div');d.className='area';
+    d.innerHTML='<div><label for="l'+n+'">Largo (m)</label><input id="l'+n+'" inputmode="decimal" placeholder="8"></div><div><label for="a'+n+'">Ancho (m)</label><input id="a'+n+'" inputmode="decimal" placeholder="6"></div>'+(n>1?'<button type="button" class="rm" aria-label="Quitar zona">×</button>':'<span></span>');
+    box.appendChild(d);
+    var rm=d.querySelector('.rm');if(rm)rm.onclick=function(){d.remove();calc();};
+    d.querySelectorAll('input').forEach(function(i){i.addEventListener('input',calc);});
+  }
+  function draw(z){
+    var W=640,H=380,pad=50,gap=70,s='';
+    if(!z.length){z=[{l:8,a:6,ghost:1}];}
+    var sumL=z.reduce(function(t,r){return t+r.l;},0),maxA=Math.max.apply(null,z.map(function(r){return r.a;}));
+    var k=Math.min((W-pad*2-gap*(z.length-1))/sumL,(H-pad*2)/maxA);
+    var x=(W-(sumL*k+gap*(z.length-1)))/2;
+    z.forEach(function(r){
+      var w=r.l*k,h=r.a*k,y=(H-h)/2;
+      s+='<rect class="grass" x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" rx="2" fill-opacity="'+(r.ghost?.18:1)+'"/>';
+      for(var gx=x+10;gx<x+w-4;gx+=12){s+='<line x1="'+gx+'" y1="'+(y+4)+'" x2="'+gx+'" y2="'+(y+h-4)+'" stroke="#fff" stroke-opacity="'+(r.ghost?.0:.07)+'" stroke-width="5"/>';}
+      s+='<line class="dim" x1="'+x+'" y1="'+(y-16)+'" x2="'+(x+w)+'" y2="'+(y-16)+'"/><line class="dim" x1="'+x+'" y1="'+(y-22)+'" x2="'+x+'" y2="'+(y-10)+'"/><line class="dim" x1="'+(x+w)+'" y1="'+(y-22)+'" x2="'+(x+w)+'" y2="'+(y-10)+'"/>';
+      s+='<text x="'+(x+w/2)+'" y="'+(y-26)+'" text-anchor="middle">'+fmt(r.l)+' m</text>';
+      s+='<line class="dim" x1="'+(x-16)+'" y1="'+y+'" x2="'+(x-16)+'" y2="'+(y+h)+'"/><line class="dim" x1="'+(x-22)+'" y1="'+y+'" x2="'+(x-10)+'" y2="'+y+'"/><line class="dim" x1="'+(x-22)+'" y1="'+(y+h)+'" x2="'+(x-10)+'" y2="'+(y+h)+'"/>';
+      s+='<text x="'+(x-28)+'" y="'+(y+h/2)+'" text-anchor="middle" transform="rotate(-90 '+(x-28)+' '+(y+h/2)+')">'+fmt(r.a)+' m</text>';
+      x+=w+gap;
+    });
+    plan.innerHTML=s;
+  }
+  function calc(){
+    total=0;var z=[];
+    box.querySelectorAll('.area').forEach(function(a){var i=a.querySelectorAll('input'),l=num(i[0].value),w=num(i[1].value);if(l&&w){total+=l*w;z.push({l:l,a:w});}});
+    document.getElementById('m2').innerHTML=fmt(total)+' <span>m²</span>';
+    document.getElementById('range').textContent=total>0?('Con la referencia nacional: entre '+money(total*200)+' y '+money(total*550)+' pesos, instalado.'):'Escribe las medidas para ver el total.';
+    draw(z);
+  }
+  addArea();calc();
+  document.getElementById('add-area').onclick=function(){addArea();box.lastChild.querySelector('input').focus();};
+  document.getElementById('calc-cta').addEventListener('click',function(){if(total>0)document.getElementById('f-m').value=fmt(total);});
+
+  /* Formulario: guarda el lead en el panel de Game Turf y deja WhatsApp con los datos */
+  var f=document.getElementById('cotiza');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=function(id){return document.getElementById(id).value.trim();};
+    var err=document.getElementById('f-err');
+    if(!v('f-n')||v('f-w').replace(/\D/g,'').length<10){err.textContent='Escribe tu nombre y un teléfono de 10 dígitos.';return;}
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v('f-e'))){err.textContent='Escribe un correo válido para enviarte la cotización.';return;}
+    err.textContent='';
+    var resumen='Origen: web '+BRAND+' (casa)\nEspacio: '+v('f-s')+'\nMetros aprox.: '+(v('f-m')||'sin dato')+'\nCiudad: '+(v('f-c')||'sin dato');
+    var p=new URLSearchParams({action:'process_quote_form_v3','your-name':v('f-n'),'your-phone':v('f-w'),'your-email':v('f-e'),'your-message':v('f-msg'),'quote_summary_data':resumen,'gt-sport':'Casa ('+BRAND+')','project-type':'Casa','gt_hp':document.getElementById('f-hp').value});
+    try{fetch(LEAD_URL,{method:'POST',mode:'no-cors',body:p,keepalive:true}).catch(function(){});}catch(_){}
+    var txt='Hola, soy '+v('f-n')+'. Quiero cotizar pasto sintético para mi casa ('+BRAND+').\n'+v('f-s')+(v('f-m')?', unos '+v('f-m')+' m²':'')+(v('f-c')?', en '+v('f-c'):'')+'.'+(v('f-msg')?'\n'+v('f-msg'):'');
+    document.getElementById('f-wa').href='https://wa.me/'+WA+'?text='+encodeURIComponent(txt);
+    f.style.display='none';var ok=document.getElementById('f-ok');ok.style.display='block';ok.focus();
+    if(window.gtag)gtag('event','generate_lead',{form:'casa'});
+  });
+})();
+</script>
+</body>
+</html>
