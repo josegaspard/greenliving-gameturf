@@ -34,7 +34,9 @@ a{color:inherit}
 :focus-visible{outline:3px solid var(--brote);outline-offset:3px}
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--g)}
 h1,h2,h3{font-family:var(--display);font-stretch:115%;font-weight:600;letter-spacing:-.025em;line-height:1.04}
-h2{font-size:clamp(36px,5.2vw,68px)}
+h2{font-size:clamp(30px,5.2vw,68px)}
+.intro .wrap>*,.proceso .wrap>*,.calc .wrap>*,.cuidados .wrap>*,.faq .wrap>*,.espacios .wrap>*{min-width:0}
+.wrap{min-width:0;max-width:min(var(--wrap),100%)}
 h3{font-size:clamp(22px,2vw,27px);letter-spacing:-.015em;line-height:1.15}
 p{max-width:62ch}
 .lead{font-size:clamp(19px,1.6vw,22px);color:var(--gris)}
@@ -175,6 +177,8 @@ textarea{min-height:110px;resize:vertical}
 .care li:last-child{border-bottom:1px solid var(--linea)}
 .care svg{width:40px;height:40px;stroke:var(--musgo);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
 .care p{color:var(--gris);font-size:17px;margin-top:8px}
+.care li>div,.steps li>*,.area>*{min-width:0}
+h1,h2,h3,p,li,summary,figcaption{overflow-wrap:break-word}
 
 /* FAQ */
 .faq{padding:0 0 clamp(88px,11vw,150px)}
@@ -192,7 +196,8 @@ details p{padding:0 0 26px;color:var(--gris);font-size:17px}
 .contacto .wrap{display:grid;grid-template-columns:5fr 7fr;gap:clamp(40px,6vw,96px)}
 .contacto .lead{color:rgba(255,255,255,.8);margin-top:22px}
 .vias{list-style:none;margin-top:40px;display:grid;gap:22px}
-.vias a{font:600 20px/1.3 var(--display);font-stretch:108%;text-decoration:none;border-bottom:1.5px solid rgba(255,255,255,.35);transition:border-color .3s var(--ease)}
+.contacto .wrap>*{min-width:0}
+.vias a{overflow-wrap:anywhere;font:600 20px/1.3 var(--display);font-stretch:108%;text-decoration:none;border-bottom:1.5px solid rgba(255,255,255,.35);transition:border-color .3s var(--ease)}
 .vias a:hover{border-color:var(--brote)}
 .vias span{display:block;font-size:15px;color:rgba(255,255,255,.7);margin-top:4px}
 .vias .btn{border:0;margin-bottom:6px}
